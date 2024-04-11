@@ -73,7 +73,7 @@ def test_cython_pxd(monkeypatch, tmp_path, editable, editable_mode, isolated):
     tmp_path1.mkdir()
     process_package(package1, tmp_path1, monkeypatch)
 
-    isolated.install("pip>23", "cython", "scikit-build-core[pyproject]")
+    isolated.install("pip>23", "Cython", "scikit-build-core[pyproject]")
 
     isolated.install(
         "-v",
